@@ -1,0 +1,54 @@
+/* Nicole Tarrol | 12/1/23 | This is the CSS file for the whole website. */
+* {
+  font-family: "Lucida Console", monospace;
+  text-align: center;
+}
+body {
+  background-image: image-set("./landingPage-images/360_F_226347386_ISWVjSS4BSh0xFtA6MQkNGdmQKAMwhS4.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+iframe, img {
+  border-radius: 25px;
+  margin-top: 10px;
+}
+a:link, a:visited {
+  color: darkcyan;
+  text-decoration: none;
+}
+.flexLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexLinks a:hover {
+  background: #d2d1d1;
+}
+.flexLinks>div {
+  background-color: #f1f1f1;
+  margin: 10px 15px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: outset lightcyan 5px;
+  box-shadow: 2px 2px 2px 2px darkcyan;
+  border-radius: 25px;
+}
+.days {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: space-evenly;
+  align-items: center;
+}
+.days>div, .noteToFam, #title, #location, #address, #dates {
+  background-color: #f1f1f1;
+  border: outset lightcyan 5px;
+  box-shadow: 2px 2px 2px 2px darkcyan;
+  border-radius: 25px;
+  margin: 15px;
+  padding: 10px;
+}
+.noteToFam, #title, #location, #address, #dates {
+  width: 45%;
+  margin: 25px auto;
+}
